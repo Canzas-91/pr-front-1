@@ -1,0 +1,55 @@
+@use "variables";
+@use "mixins";
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: variables.$bg-color;
+  color: variables.$text-color;
+  font-family: variables.$font-main;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: variables.$card-bg;
+  padding: 16px;
+  width: 260px;
+  border-radius: 10px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  &__description {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  &__price {
+    display: block;
+    margin: 12px 0;
+    font-weight: bold;
+  }
+}
+
+.btn {
+  @include mixins.button-style(variables.$accent-color);
+}

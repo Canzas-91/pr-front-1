@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #111;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1c1c1c;
+  padding: 16px;
+  width: 260px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.card__title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.card__description {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.card__price {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 16px;
+  background-color: #ff6a00;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */
